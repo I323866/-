@@ -2,7 +2,7 @@
     <div>
         <div class="crumbs">
             <el-breadcrumb separator="/">
-                <el-breadcrumb-item><i class="el-icon-setting"></i> 系统概述</el-breadcrumb-item>
+                <el-breadcrumb-item><i class="el-icon-setting"></i> 紧急培训信息</el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="ms-doc">
@@ -23,14 +23,14 @@
             }
         },
         created(){
-            var _this=this;
-            this.$axios({
-                method: 'get',
-                url: '/apis/testApi'
-             }).then(function(result){
-                _this.getData=result.data;
-                console.log(JSON.stringify(result))
-             });
+            // var _this=this;
+            // this.$axios({
+            //     method: 'get',
+            //     url: '/apis/testApi'
+            //  }).then(function(result){
+            //     _this.getData=result.data;
+            //     console.log(JSON.stringify(result))
+            //  });
         }
     }
 </script>

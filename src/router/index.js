@@ -46,8 +46,28 @@ export default new Router({
                     component: resolve => require(['../components/page/BaseCharts.vue'], resolve)   // vue-schart组件
                 },
                 {
-                    path: '/drag',
-                    component: resolve => require(['../components/page/DragList.vue'], resolve)    // 拖拽列表组件
+                    path: '/license',
+                    component: resolve => require(['../components/page/License.vue'], resolve)    // 拖拽列表组件
+                },
+                {
+                    path: '/children',
+                    component: resolve => require(['../components/page/Children.vue'], resolve)    // 拖拽列表组件
+                },
+                {
+                    path: '/training',
+                    component: resolve => require(['../components/page/Training.vue'], resolve)    // 拖拽列表组件
+                },
+                {
+                    path: '/safe',
+                    component: resolve => require(['../components/page/Safe.vue'], resolve)    // 拖拽列表组件
+                },
+                {
+                    path: '/urgent',
+                    component: resolve => require(['../components/page/Urgent.vue'], resolve)    // 拖拽列表组件
+                },
+                {
+                    path: '/tec',
+                    component: resolve => require(['../components/page/Tec.vue'], resolve)    // 拖拽列表组件
                 }
             ]
         },

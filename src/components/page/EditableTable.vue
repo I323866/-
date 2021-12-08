@@ -82,6 +82,9 @@
             }
         },
         beforeMount(){
+            // if(process.env.NODE_ENV === 'development'){
+            //     this.url = '/ms/table/source';
+            // };
             axios.get(`http://localhost:3000/api/userdeplist`).then( (res) => {
                 this.information = res.data;
             })
